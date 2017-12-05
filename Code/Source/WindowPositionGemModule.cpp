@@ -2,21 +2,21 @@
 #include <platform_impl.h>
 #include <AzCore/Memory/SystemAllocator.h>
 #include <IGem.h>
-#include <WindowPositionCVars.h>
+#include <WindowPositionGemCVars.h>
 
-namespace WindowPosition
+namespace WindowPositionGem
 {
-    class WindowPositionModule
+    class WindowPositionGemModule
         : public CryHooksModule
     {
     public:
-        AZ_RTTI(WindowPositionModule,
+        AZ_RTTI(WindowPositionGemModule,
             "{636206AD-29E1-4A8A-9575-1F18DAC2BE94}",
             CryHooksModule);
-        AZ_CLASS_ALLOCATOR(WindowPositionModule,
+        AZ_CLASS_ALLOCATOR(WindowPositionGemModule,
             AZ::SystemAllocator, 0);
 
-        WindowPositionModule() : CryHooksModule() {}
+        WindowPositionGemModule() : CryHooksModule() {}
 
         void OnCrySystemInitialized(ISystem& system,
             const SSystemInitParams& systemInitParams) override
@@ -39,7 +39,7 @@ namespace WindowPosition
             }
         }
 
-        WindowPositionCVars m_cvars;
+        WindowPositionGemCVars m_cvars;
     };
 }
 
@@ -48,5 +48,5 @@ namespace WindowPosition
 // The second should be the fully qualified name
 //     of the class above
 AZ_DECLARE_MODULE_CLASS(
-    WindowPosition_081922bcf58844ef887a1b6b3574240a,
-    WindowPosition::WindowPositionModule)
+    WindowPositionGem_081922bcf58844ef887a1b6b3574240a,
+    WindowPositionGem::WindowPositionGemModule)

@@ -2,9 +2,9 @@
 
 #include <IConsole.h>
 
-namespace WindowPosition
+namespace WindowPositionGem
 {
-    class WindowPositionCVars
+    class WindowPositionGemCVars
     {
     public:
         void RegisterCVars();

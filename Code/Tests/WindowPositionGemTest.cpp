@@ -3,7 +3,7 @@
 
 #include <AzTest/AzTest.h>
 
-class WindowPositionTest
+class WindowPositionGemTest
     : public ::testing::Test
 {
 protected:
@@ -18,7 +18,7 @@ protected:
     }
 };
 
-TEST_F(WindowPositionTest, ExampleTest)
+TEST_F(WindowPositionGemTest, ExampleTest)
 {
     ASSERT_TRUE(true);
 }

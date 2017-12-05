@@ -1,7 +1,7 @@
 {
     "auto": {
         "Tests": [
-            "Tests/WindowPositionTest.cpp"
+            "Tests/WindowPositionGemTest.cpp"
         ]
     }
 }

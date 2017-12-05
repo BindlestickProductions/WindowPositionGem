@@ -1,9 +1,9 @@
-# WindowPositionGem
+# WindowPositionGemGem
 A gem for Amazon Lumberyard to set window position of your Lumberyard application. (Supports MS Windows only.)
 
 # Installation
-1. Clone and add 'WindowPosition' folder to your 'dev/Gems' folder. For example dev/Gems/WindowPosition
-2. Use ProjectConfigurator to enable 'WindowPosition' gem for your project.
+1. Clone and add 'WindowPositionGem' folder to your 'dev/Gems' folder. For example dev/Gems/WindowPositionGem
+2. Use ProjectConfigurator to enable 'WindowPositionGem' gem for your project.
 
 # Usage
 ## From command line:

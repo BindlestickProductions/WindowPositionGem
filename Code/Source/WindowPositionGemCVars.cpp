@@ -1,12 +1,12 @@
 #include "StdAfx.h"
-#include "WindowPositionCVars.h"
+#include "WindowPositionGemCVars.h"
 #include <windows.h>
 #include <Winuser.h>
 #include <ISystem.h>
 
-using namespace WindowPosition;
+using namespace WindowPositionGem;
 
-void WindowPositionCVars::RegisterCVars()
+void WindowPositionGemCVars::RegisterCVars()
 {
     if (gEnv && !gEnv->IsEditor())
     {
@@ -19,7 +19,7 @@ void WindowPositionCVars::RegisterCVars()
     }
 }
 
-void WindowPositionCVars::UnregisterCVars()
+void WindowPositionGemCVars::UnregisterCVars()
 {
     if (gEnv && !gEnv->IsEditor())
     {
@@ -29,7 +29,7 @@ void WindowPositionCVars::UnregisterCVars()
     }
 }
 
-void WindowPositionCVars::WindowX(IConsoleCmdArgs* args)
+void WindowPositionGemCVars::WindowX(IConsoleCmdArgs* args)
 {
     if (args->GetArgCount() > 1)
     {
@@ -48,7 +48,7 @@ void WindowPositionCVars::WindowX(IConsoleCmdArgs* args)
     }
 }
 
-void WindowPositionCVars::WindowY(IConsoleCmdArgs* args)
+void WindowPositionGemCVars::WindowY(IConsoleCmdArgs* args)
 {
     if (args->GetArgCount() > 1)
     {
@@ -67,7 +67,7 @@ void WindowPositionCVars::WindowY(IConsoleCmdArgs* args)
     }
 }
 
-void WindowPositionCVars::WindowXY(IConsoleCmdArgs* args)
+void WindowPositionGemCVars::WindowXY(IConsoleCmdArgs* args)
 {
     if (args->GetArgCount() > 2)
     {

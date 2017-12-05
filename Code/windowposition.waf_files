@@ -7,9 +7,9 @@
     },
     "auto": {
         "Source": [
-            "Source/WindowPositionCVars.cpp",
-            "Source/WindowPositionCVars.h",
-            "Source/WindowPositionModule.cpp"
+            "Source/WindowPositionGemCVars.cpp",
+            "Source/WindowPositionGemCVars.h",
+            "Source/WindowPositionGemModule.cpp"
         ]
     }
 }
